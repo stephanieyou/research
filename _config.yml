@@ -1,7 +1,6 @@
 # Site settings
-title: Research
-email: szyou@andrew.cmu.edu
-description: My Undergraduate Research for 15-300 & 15-400
+title: Stephanie You
+description: Undergraduate Research for 15-300/15-400
 baseurl: "/research" # the subpath of your site, e.g. /blog
 url: "http://stephanieyou.github.io" # the base hostname & protocol for your site
 

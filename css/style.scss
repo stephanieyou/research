@@ -334,132 +334,26 @@ pre {
   font-family: 'Merriweather';
   text-transform: capitalize;
   font-weight: 500;
-  margin-top: 1em;
+  margin-top: 2em;
 }
 .site-description {
-  font-size: 16px;
+  font-size: 20px;
   letter-spacing: 2px;
   text-indent: 6px;
   font-family: 'Merriweather';
-}
-.exclamationMark {
-  padding-left: 2em;
-  padding-right: 2em;
-}
-.site-navigation {
-  text-transform: uppercase;
-  font-size: 14px;
-  letter-spacing: 2px;
-  text-indent: 6px;
-  font-family: 'PT Sans';
-  font-weight: 300;
-  padding-top: 5em;
-}
-.page-title {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-indent: 2px;
-  font-family: "PT Sans";
-  font-size: 12px;
-  text-align:center;
-}
-.page-tagline {
-  font-size: 18px;
-  font-family: "PT Sans";
-  text-align: center;
-  text-transform: lowercase;
-}
-.site-nav {
-  .page-link {
-    line-height: $base-line-height;
-    // Gaps between nav items, but not on the last one
-    &:not(:last-child) {
-      margin-right: 20px;
-    }
-  }
-  @include media-query($on-palm) {
-    position: absolute;
-    top: 9px;
-    right: $spacing-unit / 2;
-    border-radius: 5px;
-    text-align: right;
-    .menu-icon {
-      display: block;
-      float: right;
-      width: 36px;
-      height: 26px;
-      line-height: 0;
-      padding-top: 10px;
-      text-align: center;
-      > svg {
-        width: 18px;
-        height: 15px;
-      }
-    }
-    .trigger {
-      clear: both;
-      display: none;
-    }
-    &:hover .trigger {
-      display: block;
-      padding-bottom: 5px;
-    }
-    .page-link {
-      display: block;
-      padding: 5px 10px;
-      &:not(:last-child) {
-        margin-right: 0;
-      }
-      margin-left: 20px;
-    }
-  }
+  margin-bottom: 3em;
 }
 /**
  * Page content
  */
-.page-content {
-  padding: 0;
-}
-.page-heading {
-  font-size: 20px;
-}
-.post-list {
-  margin-left: 0;
-  list-style: none;
-  > li {
-    margin-bottom: $spacing-unit;
-  }
-}
-.post-meta {
-  font-size: $small-font-size;
-  text-transform: uppercase;
-  font-size: 16px;
-}
-.post-link {
-  display: block;
-  font-size: 24px;
-}
-/**
- * Posts
- */
 .post-header {
   margin-bottom: $spacing-unit;
-}
-.post-title {
-  font-size: 62px;
-
-  text-align: center;
-  font-family: "PT Sans";
-  font-weight: 900;
-  @include media-query($on-laptop) {
-    font-size: 36px;
-  }
 }
 .post-content {
   margin-bottom: $spacing-unit;
   padding-bottom: 3em !important;
   p {
-    font-size: 1.5rem;
+    font-size: 18px;
   }
   h2 {
     font-size: 32px;
@@ -468,66 +362,19 @@ pre {
     }
   }
   h3 {
-    font-size: 26px;
+    font-size: 22px;
     @include media-query($on-laptop) {
-      font-size: 22px;
+      font-size: 20px;
     }
   }
   h4 {
-    font-size: 20px;
+    font-size: 18px;
     @include media-query($on-laptop) {
-      font-size: 18px;
+      font-size: 16px;
     }
   }
 }
 
-/**
- * Pagination
- */
- .pagination {
-     padding-top: 3.5em;
-     text-align: center;
- }
- .paginationLink {
-     border: 0;
-     display: inline-block;
-     padding: 5px;
-     text-decoration: none;
-     transition: color 200ms ease-out;
-
-     &:hover,
-     &:active,
-     &:focus {
-         border: 0;
-     }
- }
- .paginationLinkCurrent {
-     font-style: normal;
- }
-
-.postNavigation {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 3em;
-
-    a:only-child {
-        width: 100%;
-    }
-}
-.postPrev,
-.postNext {
-    display: inline-block;
-    width: 49%;
-    &:hover,
-    &:active,
-    &:focus {
-        border: 0;
-    }
-}
-.postNext {
-    text-align: right;
-}
 
 /**
  * Syntax highlighting styles
