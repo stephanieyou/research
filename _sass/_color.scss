@@ -1,0 +1,128 @@
+/**
+ * Website colors. Determine color palette for dark and light theme
+ */
+
+@charset "utf-8";
+
+/**
+ * Light color palette
+ */
+$l-text-color:       #111;
+$l-link-color:       #aaa;
+$l-background-color: #fdfdfd;
+$l-brand-color:      #2a7ae2;
+$l-grey-color:       #828282;
+$l-grey-color-light: lighten($l-grey-color, 40%);
+$l-grey-color-dark:  darken($l-grey-color, 25%);
+$l-code: #EEF;
+$l-crimson: #DC143C;
+$l-nav: $l-link-color;
+$l-page: $l-link-color;
+
+/**
+ * Light theme color definitions
+ */
+body.light {
+  color: $l-text-color;
+  background-color: $l-background-color;
+
+  /**
+   * Links
+   */
+  a {
+    color: $l-link-color !important;
+
+    &:visited {
+        color: darken($l-brand-color, 50%);
+    }
+
+    &:hover {
+        color: darken($l-link-color, 50%) !important;
+        border-color: darken($l-link-color, 15%);
+    }
+
+    &.page-link{
+      &:hover {
+          color: $l-text-color;
+          border-color: darken($l-link-color, 50%);
+      }
+    }
+    &.postLink{
+      color: darken($l-link-color, 50%) !important;
+
+      &:visited {
+          color: $l-crimson !important;
+          border-color: $l-crimson;
+      }
+    }
+    &.post-title-link{
+      color: darken($l-link-color, 50%) !important;
+
+      &:visited {
+          color: $l-crimson !important;
+          border-color: $l-crimson;
+      }
+    }
+  }
+
+  blockquote {
+    color: $l-grey-color;
+    border-left-color: $l-grey-color-light;
+  }
+
+  /**
+   * Code formatting
+   */
+  pre,
+  code {
+    border-color: $l-grey-color-light;
+    background-color: $l-code;
+  }
+
+  /**
+   * Icons
+   */
+  .icon > svg path {
+    fill: $l-grey-color;
+  }
+
+  /**
+   * Site header
+   */
+  .site-header {
+    border-top-color: $l-grey-color-dark;
+    border-bottom-color: $l-grey-color-light;
+  }
+
+  .site-title,
+  .site-title:visited {
+    color: $l-grey-color-dark;
+  }
+
+  .site-navigation {
+    color: $l-nav;
+  }
+
+  .page-tagline {
+    color: $l-page;
+  }
+
+  .page-link {
+    color: $l-page;
+  }
+
+  .site-nav .page-link {
+    color: $l-text-color;
+  }
+
+  /**
+   * Site footer
+   */
+  .site-footer {
+    border-top-color: $l-grey-color-light;
+  }
+
+  .footer-col-wrapper {
+    color: $l-grey-color;
+  }
+}
