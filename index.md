@@ -11,3 +11,6 @@ University.
 The project aims to shed light on how different word embeddings represent
 words and what information each word embedding captures by using a variety of
 evaluation and comparison methods.
+
+### Project Proposal
+My project proposal is linked [here](./embedding-proposal.pdf){:target="_blank"}.
