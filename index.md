@@ -16,4 +16,4 @@ evaluation and comparison methods.
 My project proposal is linked [here](./embedding-proposal.pdf){:target="_blank"}.
 
 ### Reports
-[Report 1 12.16.2018](./report1.pdf){:target="_blank"}
+[Report 1](./report1.pdf){:target="_blank"} (12/16/2018)
