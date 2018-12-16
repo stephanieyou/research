@@ -6,7 +6,8 @@
 title: 15-400 Project Web Page
 email:
 description: Intrinsic evaluation and comparison of different word embeddings
-url: stephanieyou.github.io/research
+baseurl: "/research"
+url: "http://stephanieyou.github.io"
 keywords: ["blog", "jekyll"]
 encoding: utf-8
 
