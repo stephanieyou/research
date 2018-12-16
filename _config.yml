@@ -1,9 +1,44 @@
-# Site settings
-title: Stephanie You
-description: Undergraduate Research for 15-300/15-400
-baseurl: "/research" # the subpath of your site, e.g. /blog
-url: "http://stephanieyou.github.io" # the base hostname & protocol for your site
+#
+###################################
+# Site wide configuration
+####################################
+#
+title: 15-400 Project Web Page
+email:
+description: Intrinsic evaluation and comparison of different word embeddings
+url: stephanieyou.github.io/research
+keywords: ["blog", "jekyll"]
+encoding: utf-8
 
-plugins: [jekyll-paginate, kramdown]
-# Build settings
-markdown: kramdown
+#
+###################################
+# Jekyll configuration
+####################################
+#
+timezone:          America/Chicago
+markdown:          kramdown
+highlighter:       rouge
+excerpt_separator: <!--more-->
+permalink:         /articles/:year-:month/:title
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+
+#
+###################################
+# Site Owner configuration
+####################################
+#
+owner:
+  name: Stephanie You
+  avatar: 
+  job: "15-400 Spring 2019"
+  bio: "A collection of research project reports."
+  email: szyou@andrew.cmu.edu
+  github: stephanieyou
+  linkedin: stephanieyou
+  website: https://stephanieyou.github.io
